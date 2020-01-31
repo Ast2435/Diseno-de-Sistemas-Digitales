@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell Practica0.TECH
+Register bits:  0 of 7209 (0.000%)
+I/O cells:      17
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        10          100.0
+                               LUT4         7          100.0
+                                 OB         7          100.0
+                              TOTAL        25

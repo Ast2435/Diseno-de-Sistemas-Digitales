@@ -1,0 +1,18 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 
+MESSAGE "Compile Entity "sieteSegmentos"" 
+MESSAGE "Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"" 
+MESSAGE "Incorrect order of units detected." 
+MESSAGE "Automatic reorder and incremental recompilation of required units in progress." 
+MESSAGE "File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 
+MESSAGE "Compile Entity "sieteSegmentos"" 
+MESSAGE "Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"" 
+MESSAGE "File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 
+MESSAGE "Compile Entity "sieteSegmentos"" 
+MESSAGE "Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"" 
+MESSAGE "File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 
+MESSAGE "Compile Entity "sieteSegmentos"" 
+MESSAGE "Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"" 
+ERROR VLM_0030: "Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed." "D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 4 13
+ERROR COMP96_0056: "Cannot find referenced entity declaration "sieteSegmentos"." "D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd" 21 1
+FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

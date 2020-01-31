@@ -1,0 +1,76 @@
+# Design Explorer: Shortcut to "D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sim\sim.aws" design added.
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile {D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sietesegm.vhd}
+# Adding file D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd ... Done
+vlib {D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sim/work}
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vcom -dbg -work work {D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sietesegm.vhd}
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Error: VLM_0030: sietesegm.vhd : (4, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# Error: COMP96_0056: sietesegm.vhd : (21, 1): Cannot find referenced entity declaration "sieteSegmentos".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+entity sieteSegmentos
+# Cannot select this entity.
+vsim +access +r sieteSegmentos -PL pmi_work -L ovi_machxo2
+# Error: VSIM: Unknown library unit `sieteSegmentos' specified.
+# Error: VSIM: cannot select specified top-level
+add wave *
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+# Error: Simulation not initialized.
+#     while executing
+# "error "Simulation not initialized.""
+#     (procedure "run" line 6)
+#     invoked from within
+# "run 1000ns"
+#     (file "D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sim/sim.ado" line 26)
+#     invoked from within
+# "source {D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sim/sim.ado}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+acom -reorder -O3 -e 100 -work work -2002  $dsn/../sietesegm.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# Error: VLM_0030: sietesegm.vhd : (4, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Error: COMP96_0056: sietesegm.vhd : (21, 1): Cannot find referenced entity declaration "sieteSegmentos".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work work -2002  $dsn/../sietesegm.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# File: D:\Desktop\Diseno de Sistemas Digitales\Experimentos\7seg\sietesegm.vhd
+# Compile Entity "sieteSegmentos"
+# Compile Architecture "sieteSegmentosArq" of Entity "sieteSegmentos"
+# Error: VLM_0030: sietesegm.vhd : (4, 13): Package "lattice.components" must be recompiled because package "ieee.std_logic_1164" has changed.
+# Error: COMP96_0056: sietesegm.vhd : (21, 1): Cannot find referenced entity declaration "sieteSegmentos".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sieteSegmentos</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921240</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Dynamic>lattice</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(6): </Dynamic>
+            <Dynamic>sietesegmentos</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(21): </Dynamic>
+            <Dynamic>sietesegmentosarq</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921240</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Dynamic>lattice</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(6): </Dynamic>
+            <Dynamic>sietesegmentos</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(21): </Dynamic>
+            <Dynamic>sietesegmentosarq</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd(19): </Dynamic>
+            <Dynamic>sieteSegmentos</Dynamic>
+            <Dynamic>sieteSegmentosArq</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/experimentos/7seg/sietesegm.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,14 @@
+[Version]
+Version=10.5
+[Designs]
+sim=sim.adf
+[Settings]
+Active=sim
+[Expand]
+sim=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

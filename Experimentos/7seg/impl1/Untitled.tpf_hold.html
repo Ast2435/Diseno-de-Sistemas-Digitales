@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
+Thu Jan 30 14:34:52 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     sieteSegmentos
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+WARNING - No timing preferences found. Doing default enumeration.
+
+
+
+</A><A name="Default path enumeration
+"></A>================================================================================
+Preference: Default path enumeration
+            25 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    2.415ns delay I2 to g
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         38.PAD to       38.PADDI <A href="#@comp:I2">I2</A>
+ROUTE         7     0.494<A href="#@net:I2_c:38.PADDI:R25C2B.B1:0.494">       38.PADDI to R25C2B.B1     </A> <A href="#@net:I2_c">I2_c</A>
+CTOF_DEL    ---     0.101      R25C2B.B1 to      R25C2B.F1 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.258<A href="#@net:g_c:R25C2B.F1:35.PADDO:0.258">      R25C2B.F1 to 35.PADDO      </A> <A href="#@net:g_c">g_c</A>
+DOPAD_DEL   ---     1.084       35.PADDO to         35.PAD <A href="#@comp:g">g</A>
+                  --------
+                    2.415   (68.9% logic, 31.1% route), 3 logic levels.
+
+Report:    2.440ns delay I2 to a
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         38.PAD to       38.PADDI <A href="#@comp:I2">I2</A>
+ROUTE         7     0.519<A href="#@net:I2_c:38.PADDI:R24C2A.D1:0.519">       38.PADDI to R24C2A.D1     </A> <A href="#@net:I2_c">I2_c</A>
+CTOF_DEL    ---     0.101      R24C2A.D1 to      R24C2A.F1 <A href="#@comp:SLICE_1">SLICE_1</A>
+ROUTE         1     0.258<A href="#@net:a_c:R24C2A.F1:33.PADDO:0.258">      R24C2A.F1 to 33.PADDO      </A> <A href="#@net:a_c">a_c</A>
+DOPAD_DEL   ---     1.084       33.PADDO to         33.PAD <A href="#@comp:a">a</A>
+                  --------
+                    2.440   (68.2% logic, 31.8% route), 3 logic levels.
+
+Report:    2.458ns delay I0 to g
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         40.PAD to       40.PADDI <A href="#@comp:I0">I0</A>
+ROUTE         7     0.537<A href="#@net:I0_c:40.PADDI:R25C2B.D1:0.537">       40.PADDI to R25C2B.D1     </A> <A href="#@net:I0_c">I0_c</A>
+CTOF_DEL    ---     0.101      R25C2B.D1 to      R25C2B.F1 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.258<A href="#@net:g_c:R25C2B.F1:35.PADDO:0.258">      R25C2B.F1 to 35.PADDO      </A> <A href="#@net:g_c">g_c</A>
+DOPAD_DEL   ---     1.084       35.PADDO to         35.PAD <A href="#@comp:g">g</A>
+                  --------
+                    2.458   (67.7% logic, 32.3% route), 3 logic levels.
+
+Report:    2.471ns delay I2 to b
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         38.PAD to       38.PADDI <A href="#@comp:I2">I2</A>
+ROUTE         7     0.522<A href="#@net:I2_c:38.PADDI:R24C2B.C0:0.522">       38.PADDI to R24C2B.C0     </A> <A href="#@net:I2_c">I2_c</A>
+CTOF_DEL    ---     0.101      R24C2B.C0 to      R24C2B.F0 <A href="#@comp:SLICE_3">SLICE_3</A>
+ROUTE         1     0.286<A href="#@net:b_c:R24C2B.F0:32.PADDO:0.286">      R24C2B.F0 to 32.PADDO      </A> <A href="#@net:b_c">b_c</A>
+DOPAD_DEL   ---     1.084       32.PADDO to         32.PAD <A href="#@comp:b">b</A>
+                  --------
+                    2.471   (67.3% logic, 32.7% route), 3 logic levels.
+
+Report:    2.489ns delay I1 to g
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         41.PAD to       41.PADDI <A href="#@comp:I1">I1</A>
+ROUTE         7     0.568<A href="#@net:I1_c:41.PADDI:R25C2B.C1:0.568">       41.PADDI to R25C2B.C1     </A> <A href="#@net:I1_c">I1_c</A>
+CTOF_DEL    ---     0.101      R25C2B.C1 to      R25C2B.F1 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.258<A href="#@net:g_c:R25C2B.F1:35.PADDO:0.258">      R25C2B.F1 to 35.PADDO      </A> <A href="#@net:g_c">g_c</A>
+DOPAD_DEL   ---     1.084       35.PADDO to         35.PAD <A href="#@comp:g">g</A>
+                  --------
+                    2.489   (66.8% logic, 33.2% route), 3 logic levels.
+
+Report:    2.495ns delay I1 to a
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         41.PAD to       41.PADDI <A href="#@comp:I1">I1</A>
+ROUTE         7     0.574<A href="#@net:I1_c:41.PADDI:R24C2A.C1:0.574">       41.PADDI to R24C2A.C1     </A> <A href="#@net:I1_c">I1_c</A>
+CTOF_DEL    ---     0.101      R24C2A.C1 to      R24C2A.F1 <A href="#@comp:SLICE_1">SLICE_1</A>
+ROUTE         1     0.258<A href="#@net:a_c:R24C2A.F1:33.PADDO:0.258">      R24C2A.F1 to 33.PADDO      </A> <A href="#@net:a_c">a_c</A>
+DOPAD_DEL   ---     1.084       33.PADDO to         33.PAD <A href="#@comp:a">a</A>
+                  --------
+                    2.495   (66.7% logic, 33.3% route), 3 logic levels.
+
+Report:    2.517ns delay I1 to e
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         41.PAD to       41.PADDI <A href="#@comp:I1">I1</A>
+ROUTE         7     0.574<A href="#@net:I1_c:41.PADDI:R24C2C.C1:0.574">       41.PADDI to R24C2C.C1     </A> <A href="#@net:I1_c">I1_c</A>
+CTOF_DEL    ---     0.101      R24C2C.C1 to      R24C2C.F1 <A href="#@comp:SLICE_2">SLICE_2</A>
+ROUTE         1     0.280<A href="#@net:e_c:R24C2C.F1:28.PADDO:0.280">      R24C2C.F1 to 28.PADDO      </A> <A href="#@net:e_c">e_c</A>
+DOPAD_DEL   ---     1.084       28.PADDO to         28.PAD <A href="#@comp:e">e</A>
+                  --------
+                    2.517   (66.1% logic, 33.9% route), 3 logic levels.
+
+Report:    2.517ns delay I3 to g
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         39.PAD to       39.PADDI <A href="#@comp:I3">I3</A>
+ROUTE         4     0.596<A href="#@net:I3_c:39.PADDI:R25C2B.A1:0.596">       39.PADDI to R25C2B.A1     </A> <A href="#@net:I3_c">I3_c</A>
+CTOF_DEL    ---     0.101      R25C2B.A1 to      R25C2B.F1 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.258<A href="#@net:g_c:R25C2B.F1:35.PADDO:0.258">      R25C2B.F1 to 35.PADDO      </A> <A href="#@net:g_c">g_c</A>
+DOPAD_DEL   ---     1.084       35.PADDO to         35.PAD <A href="#@comp:g">g</A>
+                  --------
+                    2.517   (66.1% logic, 33.9% route), 3 logic levels.
+
+Report:    2.520ns delay I2 to f
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         38.PAD to       38.PADDI <A href="#@comp:I2">I2</A>
+ROUTE         7     0.494<A href="#@net:I2_c:38.PADDI:R25C2B.B0:0.494">       38.PADDI to R25C2B.B0     </A> <A href="#@net:I2_c">I2_c</A>
+CTOF_DEL    ---     0.101      R25C2B.B0 to      R25C2B.F0 <A href="#@comp:SLICE_0">SLICE_0</A>
+ROUTE         1     0.363<A href="#@net:f_c:R25C2B.F0:34.PADDO:0.363">      R25C2B.F0 to 34.PADDO      </A> <A href="#@net:f_c">f_c</A>
+DOPAD_DEL   ---     1.084       34.PADDO to         34.PAD <A href="#@comp:f">f</A>
+                  --------
+                    2.520   (66.0% logic, 34.0% route), 3 logic levels.
+
+Report:    2.521ns delay I3 to a
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.478         39.PAD to       39.PADDI <A href="#@comp:I3">I3</A>
+ROUTE         4     0.600<A href="#@net:I3_c:39.PADDI:R24C2A.B1:0.600">       39.PADDI to R24C2A.B1     </A> <A href="#@net:I3_c">I3_c</A>
+CTOF_DEL    ---     0.101      R24C2A.B1 to      R24C2A.F1 <A href="#@comp:SLICE_1">SLICE_1</A>
+ROUTE         1     0.258<A href="#@net:a_c:R24C2A.F1:33.PADDO:0.258">      R24C2A.F1 to 33.PADDO      </A> <A href="#@net:a_c">a_c</A>
+DOPAD_DEL   ---     1.084       33.PADDO to         33.PAD <A href="#@comp:a">a</A>
+                  --------
+                    2.521   (66.0% logic, 34.0% route), 3 logic levels.
+
+Report:    2.415ns is the minimum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            11 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    0.358ns minimum delay on g_c
+
+           Delays             Connection(s)
+           0.358ns        R25C2B.F1 to 35.PADDO        
+
+Report:    0.358ns minimum delay on a_c
+
+           Delays             Connection(s)
+           0.358ns        R24C2A.F1 to 33.PADDO        
+
+Report:    0.408ns minimum delay on e_c
+
+           Delays             Connection(s)
+           0.408ns        R24C2C.F1 to 28.PADDO        
+
+Report:    0.412ns minimum delay on b_c
+
+           Delays             Connection(s)
+           0.412ns        R24C2B.F0 to 32.PADDO        
+
+Report:    0.509ns minimum delay on f_c
+
+           Delays             Connection(s)
+           0.509ns        R25C2B.F0 to 34.PADDO        
+
+Report:    0.576ns minimum delay on c_c
+
+           Delays             Connection(s)
+           0.576ns        R24C2C.F0 to 25.PADDO        
+
+Report:    0.672ns minimum delay on d_c
+
+           Delays             Connection(s)
+           0.672ns        R24C2A.F0 to 26.PADDO        
+
+Report:    0.789ns minimum delay on I3_c
+
+           Delays             Connection(s)
+           0.785ns         39.PADDI to R24C2A.B1       
+           0.785ns         39.PADDI to R24C2A.B0       
+           0.789ns         39.PADDI to R25C2B.A1       
+           0.789ns         39.PADDI to R25C2B.A0       
+
+Report:    0.801ns minimum delay on I2_c
+
+           Delays             Connection(s)
+           0.732ns         38.PADDI to R24C2B.C0       
+           0.801ns         38.PADDI to R24C2C.B1       
+           0.801ns         38.PADDI to R24C2C.B0       
+           0.679ns         38.PADDI to R24C2A.D1       
+           0.679ns         38.PADDI to R24C2A.D0       
+           0.633ns         38.PADDI to R25C2B.B1       
+           0.633ns         38.PADDI to R25C2B.B0       
+
+Report:    0.892ns minimum delay on I1_c
+
+           Delays             Connection(s)
+           0.892ns         41.PADDI to R24C2B.D0       
+           0.790ns         41.PADDI to R24C2C.C1       
+           0.790ns         41.PADDI to R24C2C.C0       
+           0.790ns         41.PADDI to R24C2A.C1       
+           0.790ns         41.PADDI to R24C2A.C0       
+           0.778ns         41.PADDI to R25C2B.C1       
+           0.778ns         41.PADDI to R25C2B.C0       
+
+Report:    0.358ns is the minimum delay for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     2.415 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     0.358 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 25 paths, 11 nets, and 32 connections (100.00% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)

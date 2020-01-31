@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Practica0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/Desktop/Diseno de Sistemas Digitales/Departamental 1/Practica 0/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921240</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(5): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Dynamic>lattice</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(7): </Dynamic>
+            <Dynamic>practica0</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(14): </Dynamic>
+            <Dynamic>apractica0</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921240</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(5): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Dynamic>lattice</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(7): </Dynamic>
+            <Dynamic>practica0</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(14): </Dynamic>
+            <Dynamic>apractica0</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd(12): </Dynamic>
+            <Dynamic>Practica0</Dynamic>
+            <Dynamic>aPractica0</Dynamic>
+            <Navigation>d:/desktop/diseno de sistemas digitales/departamental 1/practica 0/practica0.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

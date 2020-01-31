@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "sieteseg_impl1.log"
+-o "sieteseg_impl1.csv"
+-pr "sieteseg_impl1.prf"

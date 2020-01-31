@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Jan 30 22:35:51 2020 *
+NOTE DESIGN NAME: sieteSegmentos *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS f : 34 : out *
+NOTE PINS e : 28 : out *
+NOTE PINS d : 26 : out *
+NOTE PINS c : 25 : out *
+NOTE PINS b : 32 : out *
+NOTE PINS a : 33 : out *
+NOTE PINS g : 35 : out *
+NOTE PINS I0 : 41 : in *
+NOTE PINS I1 : 40 : in *
+NOTE PINS I2 : 39 : in *
+NOTE PINS I3 : 38 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

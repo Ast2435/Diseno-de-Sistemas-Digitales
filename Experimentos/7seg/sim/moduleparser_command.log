@@ -1,0 +1,1 @@
+D:/diamond/3.11_x64/bin/nt64/moduleparser.exe -PROJ sim -pf D:/diamond/3.11_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg D:/diamond/3.11_x64/cae_library/vhdl_packages/vdbs -lst D:/Desktop/Diseno de Sistemas Digitales/Experimentos/7seg/sim/source_files.lst
