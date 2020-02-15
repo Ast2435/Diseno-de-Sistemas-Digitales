@@ -5,8 +5,8 @@ use lattice.components.all;
 
 entity sieteSegmentos is
 port(
-	I0: in std_logic;
-	I1: in std_logic;
+	I0: in std_logic_vector(2 downto 0);
+	I1: in std_logic_vector(;
 	I2: in std_logic;
 	I3: in std_logic;
 	a: out std_logic;
