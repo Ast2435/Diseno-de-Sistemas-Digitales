@@ -1,0 +1,18 @@
+Cypress Package: palce22v10-15pc  PinOut File: Practica11B.pin
+
+This file was created on 01/21/2021 at 08:05:17 
+by PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+==========
+clk gclk <> Enabled Normal 1 <> [Auto] 
+lb in <> Enabled Normal 2 <> [Auto] 
+eb in <> Enabled Normal 3 <> [Auto] 
+clr in <> Enabled Normal 4 <> [Auto] 
+ec in <> Enabled Normal 5 <> [Auto] 
+display(6) inout <> Enabled Normal 15 <> [Auto] 
+display(5) out <> Enabled Normal 16 <> [Auto] 
+display(2) out <> Enabled Normal 17 <> [Auto] 
+display(3) out <> Enabled Normal 18 <> [Auto] 
+display(0) out <> Enabled Normal 19 <> [Auto] 
+display(1) out <> Enabled Normal 20 <> [Auto] 
+display(4) out <> Enabled Normal 21 <> [Auto] 

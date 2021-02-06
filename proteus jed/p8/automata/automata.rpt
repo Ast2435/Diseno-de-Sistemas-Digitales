@@ -1,0 +1,455 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 6.3 IR 35
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  automata.vhd
+Options:    -yu -e10 -w100 -o2 -ygs -fP -v10 -dc22v10 -ppalce22v10-15pc -b automata.vhd -u automata.hie
+======================================================================
+
+vhdlfe V6.3 IR 35:  VHDL parser
+Sun Nov 29 22:22:59 2020
+
+Library 'work' => directory 'lc22v10'
+Linking 'C:\Program Files\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\Program Files\Cypress\Warp\lib\ieee\work'
+Linking 'C:\Program Files\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+vhdlfe:  No errors.
+
+
+tovif V6.3 IR 35:  High-level synthesis
+Sun Nov 29 22:22:59 2020
+
+Linking 'C:\Program Files\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+automata.vhd (line 157, col 15):  Warning: (W479) 'aux' should be referenced in the sensitivity list.
+
+tovif:  No errors.  1 warning.
+
+
+topld V6.3 IR 35:  Synthesis and optimization
+Sun Nov 29 22:22:59 2020
+
+Linking 'C:\Program Files\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 2 equations, 32 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 10.
+----------------------------------------------------------
+Created 55 PLD nodes.
+
+topld:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN HEADER INFORMATION  (22:23:01)
+
+Input File(s): automata.pla
+Device       : C22V10
+Package      : palce22v10-15pc
+ReportFile   : automata.rpt
+
+Program Controls:
+    COMMAND LANGUAGE_VHDL 
+    COMMAND PROPERTY BUS_HOLD ENABLE 
+
+Signal Requests:
+    GROUP USEPOL ALL
+    GROUP FAST_SLEW ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (22:23:01)
+
+Messages:
+  Information: Process virtual 'aux_0D'aux_0D ... expanded.
+  Information: Process virtual 'aux_3D'aux_3D ... expanded.
+  Information: Process virtual 'aux_5D'aux_5D ... expanded.
+  Information: Process virtual 'aux_6D'aux_6D ... expanded.
+  Information: Process virtual 'aux_7D'aux_7D ... expanded.
+  Information: Process virtual 'aux_8D'aux_8D ... expanded.
+  Information: Process virtual 'aux_9D'aux_9D ... expanded.
+  Information: Optimizing logic using best output polarity for signals:
+         estado(0).D estado(3).D estado(5).D estado(6).D estado(7).D
+         estado(8).D estado(9).D
+
+  Information: Selected logic optimization OFF for signals:
+         estado(0).AR estado(0).C estado(1) estado(2).D estado(2).AR
+         estado(2).C estado(3).AR estado(3).C estado(4) estado(5).AR
+         estado(5).C estado(6).AR estado(6).C estado(7).AR estado(7).C
+         estado(8).AR estado(8).C estado(9).AR estado(9).C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (22:23:01)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Equations" icon=FILE_RPT_EQUATION>
+DESIGN EQUATIONS           (22:23:01)
+</CYPRESSTAG>
+
+    estado(0).D =
+          /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+
+    estado(0).AR =
+          clr 
+
+    estado(0).SP =
+          GND
+
+    estado(0).C =
+          clk 
+
+    estado(1) =
+          estado(2).Q 
+
+    estado(2).D =
+          GND
+
+    estado(2).AR =
+          clr 
+
+    estado(2).SP =
+          GND
+
+    estado(2).C =
+          clk 
+
+    estado(3).D =
+          e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + e(1) * /estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + e(1) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+
+    estado(3).AR =
+          clr 
+
+    estado(3).SP =
+          GND
+
+    estado(3).C =
+          clk 
+
+    estado(4) =
+          estado(5).Q 
+
+    estado(5).D =
+          /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+
+    estado(5).AR =
+          clr 
+
+    estado(5).SP =
+          GND
+
+    estado(5).C =
+          clk 
+
+    estado(6).D =
+          /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + e(1) * /estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + e(1) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+
+    estado(6).AR =
+          clr 
+
+    estado(6).SP =
+          GND
+
+    estado(6).C =
+          clk 
+
+    estado(7).D =
+          e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + e(1) * /estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + /e(2) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(7).Q * estado(8).Q * /estado(9).Q 
+
+    estado(7).AR =
+          clr 
+
+    estado(7).SP =
+          GND
+
+    estado(7).C =
+          clk 
+
+    estado(8).D =
+          /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + /e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+
+    estado(8).AR =
+          clr 
+
+    estado(8).SP =
+          GND
+
+    estado(8).C =
+          clk 
+
+    estado(9).D =
+          e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + /e(0) * estado(0).Q * /estado(2).Q * /estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + e(0) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(7).Q * /estado(8).Q * estado(9).Q 
+        + e(2) * /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(7).Q * estado(8).Q * /estado(9).Q 
+        + estado(0).Q * /estado(2).Q * /estado(3).Q * estado(5).Q * 
+          estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+        + /estado(0).Q * /estado(2).Q * estado(3).Q * /estado(5).Q * 
+          /estado(6).Q * estado(7).Q * /estado(8).Q * /estado(9).Q 
+
+    estado(9).AR =
+          clr 
+
+    estado(9).SP =
+          GND
+
+    estado(9).C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN RULE CHECK          (22:23:01)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Pinout" icon=FILE_RPT_PINOUT>
+PINOUT INFORMATION   (22:23:01)
+</CYPRESSTAG>
+Messages:
+  Information: Checking for duplicate NODE logic.
+                 None.
+
+
+                                 C22V10
+                 __________________________________________
+            clk =| 1|                                  |24|* not used       
+           e(2) =| 2|                                  |23|= estado(0)      
+           e(1) =| 3|                                  |22|= estado(3)      
+           e(0) =| 4|                                  |21|= estado(7)      
+            clr =| 5|                                  |20|= estado(4)      
+       not used *| 6|                                  |19|= estado(1)      
+       not used *| 7|                                  |18|= estado(2)      
+       not used *| 8|                                  |17|= estado(5)      
+       not used *| 9|                                  |16|= estado(8)      
+       not used *|10|                                  |15|= estado(9)      
+       not used *|11|                                  |14|= estado(6)      
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Utilization" icon=FILE_RPT_UTILIZATION>
+RESOURCE UTILIZATION (22:23:01)
+</CYPRESSTAG>
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    4  |   11  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |   10  |   10  |
+                 ______________________________________
+                                          15  /   22   = 68  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 | 14  |  estado(6)       |   8  |   8  |
+                 | 15  |  estado(9)       |   9  |  10  |
+                 | 16  |  estado(8)       |   5  |  12  |
+                 | 17  |  estado(5)       |   5  |  14  |
+                 | 18  |  estado(2)       |   1  |  16  |
+                 | 19  |  estado(1)       |   1  |  16  |
+                 | 20  |  estado(4)       |   1  |  14  |
+                 | 21  |  estado(7)       |   5  |  12  |
+                 | 22  |  estado(3)       |   9  |  10  |
+                 | 23  |  estado(0)       |   8  |   8  |
+                 | 25  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             52  / 121   = 42  %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+JEDEC ASSEMBLE             (22:23:01)
+
+Messages:
+  Information: Output file 'automata.pin' created.
+  Information: Output file 'automata.jed' created.
+
+  Usercode:    
+  Checksum:    0AE7
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 22:23:01

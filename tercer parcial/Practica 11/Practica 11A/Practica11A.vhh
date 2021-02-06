@@ -1,0 +1,12 @@
+ENTITY registro IS
+    PORT (
+	dato : in std_logic_vector (5 downto 0) ; 
+	clk : in std_logic  ; 
+	clr : in std_logic  ; 
+	ini : in std_logic  ; 
+	a0 : inout std_logic_vector (5 downto 0) ; 
+	lb : inout std_logic  ; 
+	eb : inout std_logic  ; 
+	ec : inout std_logic 
+    ) ;
+END registro ;

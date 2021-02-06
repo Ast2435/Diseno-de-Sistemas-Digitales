@@ -1,0 +1,449 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 6.3 IR 35
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  Practica11A.vhd
+Options:    -yu -e10 -w100 -o2 -ygs -fP -v10 -dc22v10 -ppalce22v10-15pc -b Practica11A.vhd -u Practica11A.hie
+======================================================================
+
+vhdlfe V6.3 IR 35:  VHDL parser
+Thu Jan 21 07:58:00 2021
+
+Library 'work' => directory 'lc22v10'
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work'
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+vhdlfe:  No errors.
+
+
+tovif V6.3 IR 35:  High-level synthesis
+Thu Jan 21 07:58:00 2021
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+
+tovif:  No errors.
+
+
+topld V6.3 IR 35:  Synthesis and optimization
+Thu Jan 21 07:58:00 2021
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+State variable 'edo_act' is represented by a Bit_vector (0 to 1).
+State encoding (sequential) for 'edo_act' is:
+	e0 :=	b"00";
+	e1 :=	b"01";
+	e2 :=	b"10";
+State variable 'edo_sig' is represented by a Bit_vector (0 to 1).
+State encoding (sequential) for 'edo_sig' is:
+	e0 :=	b"00";
+	e1 :=	b"01";
+	e2 :=	b"10";
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 19 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 2 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 10.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 0 wires.
+------------------------------------------------------
+Created 51 PLD nodes.
+
+topld:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN HEADER INFORMATION  (07:58:01)
+
+Input File(s): Practica11A.pla
+Device       : C22V10
+Package      : palce22v10-15pc
+ReportFile   : Practica11A.rpt
+
+Program Controls:
+    COMMAND LANGUAGE_VHDL 
+    COMMAND PROPERTY BUS_HOLD ENABLE 
+
+Signal Requests:
+    GROUP USEPOL ALL
+    GROUP FAST_SLEW ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (07:58:01)
+
+Messages:
+  Information: Process virtual '\a0(0)D\'\a0(0)D\ ... expanded.
+  Information: Process virtual '\a0(1)D\'\a0(1)D\ ... expanded.
+  Information: Process virtual '\a0(2)D\'\a0(2)D\ ... expanded.
+  Information: Process virtual '\a0(3)D\'\a0(3)D\ ... expanded.
+  Information: Process virtual '\a0(4)D\'\a0(4)D\ ... expanded.
+  Information: Process virtual '\a0(5)D\'\a0(5)D\ ... expanded.
+  Information: Process virtual 'edo_sigSBV_1'edo_sigSBV_1 ... expanded.
+  Information: Process virtual 'edo_sigSBV_0'edo_sigSBV_0 ... expanded.
+  Information: Process virtual 'edo_actSBV_1' ... converted to NODE.
+  Information: Process virtual 'edo_actSBV_0'edo_actSBV_0 ... expanded.
+  Information: Optimizing logic using best output polarity for signals:
+         a0(0).D a0(1).D a0(2).D a0(3).D a0(4).D a0(5).D ec.D edo_actSBV_1.D
+
+  Information: Selected logic optimization OFF for signals:
+         a0(0).AR a0(0).C a0(1).AR a0(1).C a0(2).AR a0(2).C a0(3).AR a0(3).C
+         a0(4).AR a0(4).C a0(5).AR a0(5).C eb ec.AR ec.C edo_actSBV_1.AR
+         edo_actSBV_1.C lb
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (07:58:01)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+  Information: Selecting D register equation as minimal for signal ec
+  Information: Selecting D register equation as minimal for signal a0(0)
+  Information: Selecting D register equation as minimal for signal a0(1)
+  Information: Selecting D register equation as minimal for signal a0(2)
+  Information: Selecting D register equation as minimal for signal a0(3)
+  Information: Selecting D register equation as minimal for signal a0(4)
+  Information: Selecting D register equation as minimal for signal a0(5)
+  Information: Inverting Preset/Reset & output logic polarity for edo_actSBV_1.
+  Information: Selecting D register equation as minimal for signal edo_actSBV_1
+  Information: Optimizing logic without changing polarity for signals:
+         a0(0).D a0(1).D a0(2).D a0(3).D a0(4).D a0(5).D ec.D edo_actSBV_1.D
+
+  Information: Selected logic optimization OFF for signals:
+         a0(0).AR a0(0).SP a0(0).C a0(1).AR a0(1).SP a0(1).C a0(2).AR a0(2).SP
+         a0(2).C a0(3).AR a0(3).SP a0(3).C a0(4).AR a0(4).SP a0(4).C a0(5).AR
+         a0(5).SP a0(5).C eb ec.AR ec.SP ec.C edo_actSBV_1.AR edo_actSBV_1.SP
+         edo_actSBV_1.C lb
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (07:58:01)
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Equations" icon=FILE_RPT_EQUATION>
+DESIGN EQUATIONS           (07:58:01)
+</CYPRESSTAG>
+
+    a0(0).D =
+          dato(0) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(0).Q * /edo_actSBV_1.Q * ini 
+        + a0(0).Q * ec.Q * /edo_actSBV_1.Q 
+        + a0(1).Q * edo_actSBV_1.Q 
+
+    a0(0).AR =
+          clr 
+
+    a0(0).SP =
+          GND
+
+    a0(0).C =
+          clk 
+
+    a0(1).D =
+          dato(1) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(1).Q * /edo_actSBV_1.Q * ini 
+        + a0(1).Q * ec.Q * /edo_actSBV_1.Q 
+        + a0(2).Q * edo_actSBV_1.Q 
+
+    a0(1).AR =
+          clr 
+
+    a0(1).SP =
+          GND
+
+    a0(1).C =
+          clk 
+
+    a0(2).D =
+          dato(2) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(2).Q * /edo_actSBV_1.Q * ini 
+        + a0(2).Q * ec.Q * /edo_actSBV_1.Q 
+        + a0(3).Q * edo_actSBV_1.Q 
+
+    a0(2).AR =
+          clr 
+
+    a0(2).SP =
+          GND
+
+    a0(2).C =
+          clk 
+
+    a0(3).D =
+          dato(3) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(3).Q * /edo_actSBV_1.Q * ini 
+        + a0(3).Q * ec.Q * /edo_actSBV_1.Q 
+        + a0(4).Q * edo_actSBV_1.Q 
+
+    a0(3).AR =
+          clr 
+
+    a0(3).SP =
+          GND
+
+    a0(3).C =
+          clk 
+
+    a0(4).D =
+          dato(4) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(4).Q * /edo_actSBV_1.Q * ini 
+        + a0(4).Q * ec.Q * /edo_actSBV_1.Q 
+        + a0(5).Q * edo_actSBV_1.Q 
+
+    a0(4).AR =
+          clr 
+
+    a0(4).SP =
+          GND
+
+    a0(4).C =
+          clk 
+
+    a0(5).D =
+          dato(5) * /ec.Q * /edo_actSBV_1.Q * /ini 
+        + a0(5).Q * /edo_actSBV_1.Q * ini 
+        + a0(5).Q * ec.Q * /edo_actSBV_1.Q 
+
+    a0(5).AR =
+          clr 
+
+    a0(5).SP =
+          GND
+
+    a0(5).C =
+          clk 
+
+    eb =
+          a0(0).Q * edo_actSBV_1.Q 
+
+    ec.D =
+          /a0(0).Q * /a0(1).Q * /a0(2).Q * /a0(3).Q * /a0(4).Q * /a0(5).Q * 
+          edo_actSBV_1.Q 
+        + ec.Q * ini 
+
+    ec.AR =
+          clr 
+
+    ec.SP =
+          GND
+
+    ec.C =
+          clk 
+
+    edo_actSBV_1.D =
+          /ec.Q * /edo_actSBV_1.Q * ini 
+        + a0(5).Q * edo_actSBV_1.Q 
+        + a0(4).Q * edo_actSBV_1.Q 
+        + a0(3).Q * edo_actSBV_1.Q 
+        + a0(2).Q * edo_actSBV_1.Q 
+        + a0(1).Q * edo_actSBV_1.Q 
+        + a0(0).Q * edo_actSBV_1.Q 
+
+    edo_actSBV_1.AR =
+          clr 
+
+    edo_actSBV_1.SP =
+          GND
+
+    edo_actSBV_1.C =
+          clk 
+
+    lb =
+          /ec.Q * /edo_actSBV_1.Q 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN RULE CHECK          (07:58:01)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Pinout" icon=FILE_RPT_PINOUT>
+PINOUT INFORMATION   (07:58:01)
+</CYPRESSTAG>
+Messages:
+  Information: Checking for duplicate NODE logic.
+                 None.
+
+
+                                 C22V10
+                 __________________________________________
+            clk =| 1|                                  |24|* not used       
+            clr =| 2|                                  |23|= (edo_actSBV_1) 
+        dato(5) =| 3|                                  |22|= lb             
+        dato(4) =| 4|                                  |21|= eb             
+        dato(3) =| 5|                                  |20|= ec             
+        dato(2) =| 6|                                  |19|= a0(0)          
+        dato(1) =| 7|                                  |18|= a0(1)          
+        dato(0) =| 8|                                  |17|= a0(2)          
+            ini =| 9|                                  |16|= a0(3)          
+       not used *|10|                                  |15|= a0(4)          
+       not used *|11|                                  |14|= a0(5)          
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Utilization" icon=FILE_RPT_UTILIZATION>
+RESOURCE UTILIZATION (07:58:01)
+</CYPRESSTAG>
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |    8  |   11  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |   10  |   10  |
+                 ______________________________________
+                                          19  /   22   = 86  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 | 14  |  a0(5)           |   3  |   8  |
+                 | 15  |  a0(4)           |   4  |  10  |
+                 | 16  |  a0(3)           |   4  |  12  |
+                 | 17  |  a0(2)           |   4  |  14  |
+                 | 18  |  a0(1)           |   4  |  16  |
+                 | 19  |  a0(0)           |   4  |  16  |
+                 | 20  |  ec              |   2  |  14  |
+                 | 21  |  eb              |   1  |  12  |
+                 | 22  |  lb              |   1  |  10  |
+                 | 23  |  edo_actSBV_1    |   7  |   8  |
+                 | 25  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             34  / 121   = 28  %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+JEDEC ASSEMBLE             (07:58:01)
+
+Messages:
+  Information: Output file 'Practica11A.pin' created.
+  Information: Output file 'Practica11A.jed' created.
+
+  Usercode:    
+  Checksum:    E21D
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 07:58:01
